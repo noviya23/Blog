@@ -25,7 +25,6 @@ gem "stimulus-rails"
 
 # Build JSON APIs with ease [https://github.com/rails/jbuilder]
 gem "jbuilder"
-gem "better_errors", "~> 2.4"
 
 gem "bulma-rails", "~> 0.6.1"
 gem 'simple_form', '~> 5.3'
@@ -68,8 +67,10 @@ group :development do
   gem "error_highlight", ">= 0.4.0", platforms: [:ruby]
   gem "guard", "~> 2.14", ">= 2.14.1"
   gem "guard-livereload", "~> 2.5", ">= 2.5.2"
+  gem "better_errors"
 end
-
+gem "binding_of_caller"
+gem "sassc-rails"
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
   gem "capybara"
